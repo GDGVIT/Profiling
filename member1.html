@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>GDG VIT Vellore Profile</title>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+          <link href="https://cdn.rawgit.com/Dogfalo/materialize/master/dist/css/materialize.min.css" rel="stylesheet">
+          
+
+<script src="materialize/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $('.dropdown-button').dropdown();
+    { hover: false; }
+  });
+   $(document).ready(function(){
+            $('ul.tabs').tabs();
+          });
+         
+  $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+
+</script>
+  
+<body>
+
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="index.html">Rishi Raj</a></li>
+  <li><a href="member1.html">Shreyansh Srivastava</a></li>
+    <li><a href="member2.html">Member3</a></li>
+</ul>
+<nav class="red lighten-2">
+  <div class="nav-wrapper">
+   <a class="navbar-brand" href="#home">  <img src="logo-big.png" height="60px"></a>
+    <ul class="right hide-on-med-and-down">
+      <li><nav class="red lighten-2">
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" onclick="$('#dropdown1').toggle();return false;" type="text" placeholder="Members" required>
+          <label for="search"><i class="mdi-action-search"></i></label>
+        </div>
+      </form>
+    </div>
+  </nav></li>
+      
+  </div>
+</nav> 
+
+
+<div class="row">
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="rishi.jpg">
+              <span class="card-title">Rishi Raj</span>
+            </div>
+            <div class="card-content">
+              <p>Developer.</p>
+            </div>
+             <div class="card-action">
+              <a href="#">Facebook</a>
+              <a href='#'>Twitter</a>
+            </div>
+          </div>
+        </div>
+             <div class="row">
+    <div class="col s8">
+    <div class="card">
+      <ul class="tabs">
+        <li class="tab col s4 "><a class="active" href="#test1">Profile</a></li>
+        <li class="tab col s4 "><a  href="#test2">Projects</a></li>
+        <li class="tab col s4 "><a href="#test3">Skills</a></li>
+        </ul>
+     <div id="test1" class="tab col s12 ">
+    <table>
+                    <tbody>
+                      <tr>
+                        <td>Department:</td>
+                        <td>Technical</td>
+                      </tr>
+                      <tr>
+                      <td>Domain:</td>
+                      <td>Web Dev</td>
+                      <tr>
+                        <td>Date of Birth:</td>
+                        <td>15/11/1995</td>
+                      </tr>
+                   
+                         <tr>
+                             <tr>
+                        <td>Registration Number:</td>
+                        <td>14BCB0094</td>
+                      </tr>
+                                   
+                    </tbody>
+                  </table></div>
+    <div id="test2" class="tab col s11 "><ul class="collection">
+         <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="mdi-action-assignment-turned-in"></i>Project 1</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="mdi-action-assignment-turned-in"></i>Project 2</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="mdi-action-assignment-turned-in"></i>Project 3</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+        </div>
+                        
+<div id="test3" class="tab col s6">
+<li>Web Desigining</li>
+  <li>Material CSS</li>
+  </div>
+      </div>
+</div>
+</div>
+
+ <footer>
+<div class="footer-copyright">
+<div class="container">
+© 2014 Copyright Text
+<a class="grey-text text-lighten-4 right" href="#!">About Me</a>
+</div>
+</div>
+</footer>
+                        
+    </body>
+    </html>
